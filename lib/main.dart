@@ -1,19 +1,14 @@
-import 'dart:io';
-
-import 'package:android_intent_plus/android_intent.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
-  runApp(BusinessCardApp());
+  runApp(const BusinessCardApp());
 }
 
 class BusinessCardApp extends StatelessWidget {
   final String phoneNumberUrl = "tel:01095626660";
-
-  BusinessCardApp({Key? key}) : super(key: key);
+  const BusinessCardApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +29,7 @@ class BusinessCardApp extends StatelessWidget {
                     child: CircleAvatar(
                       radius: 29.w,
                       backgroundImage:
-                          AssetImage('assets/images/kareem_ayman.png'),
+                          const AssetImage('assets/images/kareem_ayman.png'),
                     ),
                   ),
                   const Text(
@@ -54,7 +49,7 @@ class BusinessCardApp extends StatelessWidget {
                     ),
                   ),
                   Divider(
-                    color: Color(0xFF6C8090),
+                    color: const Color(0xFF6C8090),
                     thickness: 1.sp,
                     indent: 8.w,
                     endIndent: 8.w,
@@ -83,7 +78,7 @@ class BusinessCardApp extends StatelessWidget {
                     leading: Icon(
                       Icons.phone,
                       size: 23.sp,
-                      color: Color(0xFF2B475E),
+                      color: const Color(0xFF2B475E),
                     ),
                     title: Text(
                       '(+20)1095626660',
@@ -107,7 +102,7 @@ class BusinessCardApp extends StatelessWidget {
                     leading: Icon(
                       Icons.mail,
                       size: 23.sp,
-                      color: Color(0xFF2B475E),
+                      color: const Color(0xFF2B475E),
                     ),
                     title: Text(
                       'kareem.ayman1622@gmail.com',
